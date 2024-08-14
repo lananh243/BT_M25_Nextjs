@@ -2,32 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.primary {
+    width: 150px;
+    height: 45px;
+    background-color: blue;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.success {
+    width: 150px;
+    height: 45px;
+    background-color: green;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.warning {
+    width: 150px;
+    height: 45px;
+    background-color: orangered;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.danger {
+    width: 150px;
+    height: 45px;
+    background-color: red;
+    font-size: larger;
+    color: white;
+    border-radius: 5px;
+}
+.suc {
+    width: 400px;
+    height: 43px;
+    border: 1px solid orangered;
+    background: rgb(230, 213, 207);
+    border-radius: 7px;
+}
+.info {
+    width: 400px;
+    height: 43px;
+    border: 1px solid rgb(83, 83, 155);
+    background: rgb(213, 236, 236);
+    border-radius: 7px;
+}
+.warn {
+    width: 400px;
+    height: 43px;
+    border: 1px solid yellow;
+    background: rgb(249, 249, 221);
+    border-radius: 7px;
+}
+.error {
+    width: 400px;
+    height: 43px;
+    border: 1px solid red;
+    background: rgb(227, 225, 225);
+    border-radius: 7px;
 }
