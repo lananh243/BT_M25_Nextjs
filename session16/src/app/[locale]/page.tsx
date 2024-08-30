@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 
 export default function HomePage() {
-  const [select, setSelect] = useState<boolean>(true);
+  const [select, setSelect] = useState(false);
   const route = useRouter();
   const t = useTranslations("HomePage");
   const handleChange = (e: ChangeEvent<HTMLSelectElement>) => {
